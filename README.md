@@ -36,7 +36,7 @@ When major learnings are shared, they will look similar to the code snippets bel
 
 
 ```java
-public class Main {
+public class com.timbuchalka.Main {
   public static void main(String[] args) {
       System.out.println("Hello, World!");
   }
