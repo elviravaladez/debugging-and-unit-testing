@@ -1,4 +1,4 @@
-package com.timbuchalka;
+package com;
 
 public class StringUtilities {
     private StringBuilder sBuilder = new StringBuilder();
