@@ -52,18 +52,22 @@ class SampleTest {
   public void equalTest() throws Exception {
       //assertEquals() method example
       assertEquals(21, 25);
+      
       //first parameter is the expected value
      //second parameter is the actual value
-    //this test would fail because the two parameters are NOT the same
+    
+    //this test would FAIL because the two parameters are NOT the same
   }
 
   @org.junit.jupiter.api.Test
   public void notEqualTest() throws Exception {
     //assertEquals() method example
     assertNotEquals(21, 25);
+    
     //first parameter is the expected value
     //second parameter is the actual value
-    //this test would pass because the two parameters are NOT the same
+    
+    //this test would PASS because the two parameters are NOT the same
   }
   
 }
@@ -80,14 +84,16 @@ class SampleTest {
   public void trueTest() throws Exception {
     BankAccount account = new BankAccount("John", "Doe", 100.00, BankAccount.checking); //BankAccount.checking represents that the account is a checking account
     assertTrue(account.isChecking());
-    //will pass the test because the bank account is a checking account
+    
+    //this test would PASS because the bank account is a checking account
   }
 
   @org.junit.jupiter.api.Test
   public void falseTest() throws Exception {
     BankAccount account = new BankAccount("John", "Doe", 100.00, BankAccount.checking); //BankAccount.checking represents that the account is a checking account
     assertFalse(account.isChecking());
-    //will NOT pass the test because the bank account is a checking account
+    
+    //this test would NOT PASS because the bank account is a checking account
   }
 }
 ```
