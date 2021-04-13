@@ -28,20 +28,37 @@ Understand the fundamentals of debugging and Unit Testing in Java.
 
 ### What I Learned
 
-This section will be updated to include some of my major learnings while working through this project.
+---
 
-I will be writing these out and providing code samples of areas I would like to highlight to reinforce my knowledge.
-
-When major learnings are shared, they will look similar to the code snippets below 😊:
-
+#### Assert Methods in JUnit
+* fail()
+  * Fails a test with the given failure message or underlying cause
 
 ```java
-public class Main {
-  public static void main(String[] args) {
-      System.out.println("Hello, World!");
+class SampleTest {
+  @org.junit.jupiter.api.Test
+  public void practiceTest() throws Exception {
+      //fail() method example
+      fail("This test has yet to be implemented.");
   }
 }
 ```
+* assertEquals() / assertNotEquals()
+  * To check if two values are equal / not equal
+  
+* assertTrue() / assertFalse()
+  * Asserts that the supplied condition is true or false.
+* assertArrayEquals()
+  * Verifies the value of an array
+      * Compares the lengths and every element in both arrays is in the same order
+  * Must be used with arrays because the assertEquals() method only considers two arrays equal if they are the same instance.
+* assertNull() / assertNotNull()
+  * Checks for null and non-null values
+* assertSame() / assertNotSame()
+  * Verifies if instances are the exact same instance
+  * Compares the object references
+* assertThat()
+  * Compares the actual value against a range of values
 
 ### Continued Development
 
