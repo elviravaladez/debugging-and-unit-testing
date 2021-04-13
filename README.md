@@ -45,9 +45,53 @@ class SampleTest {
 ```
 * assertEquals() / assertNotEquals()
   * To check if two values are equal / not equal
+
+```java
+class SampleTest {
+  @org.junit.jupiter.api.Test
+  public void equalTest() throws Exception {
+      //assertEquals() method example
+      assertEquals(21, 25);
+      //first parameter is the expected value
+     //second parameter is the actual value
+    //this test would fail because the two parameters are NOT the same
+  }
+
+  @org.junit.jupiter.api.Test
+  public void notEqualTest() throws Exception {
+    //assertEquals() method example
+    assertNotEquals(21, 25);
+    //first parameter is the expected value
+    //second parameter is the actual value
+    //this test would pass because the two parameters are NOT the same
+  }
   
+}
+```
+
 * assertTrue() / assertFalse()
   * Asserts that the supplied condition is true or false.
+
+```java
+import com.BankAccount;
+
+class SampleTest {
+  @org.junit.jupiter.api.Test
+  public void trueTest() throws Exception {
+    BankAccount account = new BankAccount("John", "Doe", 100.00, BankAccount.checking); //BankAccount.checking represents that the account is a checking account
+    assertTrue(account.isChecking());
+    //will pass the test because the bank account is a checking account
+  }
+
+  @org.junit.jupiter.api.Test
+  public void falseTest() throws Exception {
+    BankAccount account = new BankAccount("John", "Doe", 100.00, BankAccount.checking); //BankAccount.checking represents that the account is a checking account
+    assertFalse(account.isChecking());
+    //will NOT pass the test because the bank account is a checking account
+  }
+}
+```
+
 * assertArrayEquals()
   * Verifies the value of an array
       * Compares the lengths and every element in both arrays is in the same order
