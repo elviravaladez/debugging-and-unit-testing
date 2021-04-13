@@ -70,7 +70,7 @@ class SampleTest {
 ```
 
 * assertTrue() / assertFalse()
-  * Asserts that the supplied condition is true or false.
+  * Asserts that the supplied condition is true or false
 
 ```java
 import com.BankAccount;
