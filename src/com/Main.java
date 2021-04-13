@@ -8,5 +8,7 @@ public class Main {
             utils.addChar(sb, 'a');
         }
         System.out.println(sb);
+
+        System.out.println("The app is running");
     }
 }
