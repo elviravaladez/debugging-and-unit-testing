@@ -45,7 +45,7 @@ class BankAccountTest {
     }
 
     @org.junit.jupiter.api.Test
-    public void isCheckingTrue() {
+    public void isCheckingTrue() throws Exception {
         BankAccount account = new BankAccount("Elvira", "Valadez", 2000.00, BankAccount.checking);
         assertTrue(account.isChecking()); //to return true or false checking if it returns true
     }
